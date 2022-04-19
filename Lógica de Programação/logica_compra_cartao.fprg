@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samsung"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-13 12:10:02 "/>
+        <attribute name="created" value="U2Ftc3VuZztMQVBUT1AtSUdOUkYyNDc7MjAyMi0wNC0xMzsiMTE6MzE6NTIgIjsyOTU2"/>
+        <attribute name="edited" value="U2Ftc3VuZztMQVBUT1AtSUdOUkYyNDc7MjAyMi0wNC0xMzsiMTI6MTA6MDIgIjsxOzMwNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                    <output expression="&quot;compra aprovada&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o pode ralizar a compra&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

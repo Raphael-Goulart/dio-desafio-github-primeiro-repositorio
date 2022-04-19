@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samsung"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-13 12:41:41 "/>
+        <attribute name="created" value="U2Ftc3VuZztMQVBUT1AtSUdOUkYyNDc7MjAyMi0wNC0xMzsiMTE6MzE6NTIgIjsyOTU2"/>
+        <attribute name="edited" value="U2Ftc3VuZztMQVBUT1AtSUdOUkYyNDc7MjAyMi0wNC0xMzsiMTI6NDE6NDEgIjszOzMwNjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Aluno Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno n&#227;o Aprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
