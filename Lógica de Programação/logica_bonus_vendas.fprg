@@ -11,12 +11,13 @@
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="jan, fev, mar, abr, media" type="Real" array="False" size=""/>
+            <declare name="jan, fev, mar, abr, mai, media" type="Real" array="False" size=""/>
             <input variable="jan"/>
             <input variable="fev"/>
             <input variable="mar"/>
             <input variable="abr"/>
-            <assign variable="media" expression="(jan+fev+mar+abr)/4"/>
+            <input variable="mai"/>
+            <assign variable="media" expression="(jan+fev+mar+abr+mai)/5"/>
             <output expression="media" newline="True"/>
             <if expression="media&gt;=5000">
                 <then>
